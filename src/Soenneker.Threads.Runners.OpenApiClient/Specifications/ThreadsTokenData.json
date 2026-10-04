@@ -1,0 +1,41 @@
+{
+  "fields": [
+    {
+      "name": "app_id",
+      "type": "string"
+    },
+    {
+      "name": "type",
+      "type": "string"
+    },
+    {
+      "name": "application",
+      "type": "string"
+    },
+    {
+      "name": "data_access_expires_at",
+      "type": "unsigned int"
+    },
+    {
+      "name": "expires_at",
+      "type": "unsigned int"
+    },
+    {
+      "name": "is_valid",
+      "type": "bool"
+    },
+    {
+      "name": "issued_at",
+      "type": "unsigned int"
+    },
+    {
+      "name": "scopes",
+      "type": "list<string>"
+    },
+    {
+      "name": "user_id",
+      "type": "string"
+    }
+  ],
+  "apis": []
+}

@@ -1,0 +1,42 @@
+{
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "username",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "threads_profile_picture_url",
+      "type": "string"
+    },
+    {
+      "name": "threads_biography",
+      "type": "string"
+    },
+    {
+      "name": "is_verified",
+      "type": "bool"
+    }
+  ],
+  "apis": [
+    {
+      "method": "GET",
+      "basePath": "profile_lookup",
+      "return": "ThreadsUser",
+      "params": [
+        {
+          "name": "username",
+          "type": "string",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

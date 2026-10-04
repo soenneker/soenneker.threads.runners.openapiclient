@@ -1,0 +1,22 @@
+{
+  "fields": [
+    {
+      "name": "data",
+      "type": "ThreadsTokenData"
+    }
+  ],
+  "apis": [
+    {
+      "method": "GET",
+      "basePath": "debug_token",
+      "return": "ThreadsTokenDebug",
+      "params": [
+        {
+          "name": "input_token",
+          "type": "string",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

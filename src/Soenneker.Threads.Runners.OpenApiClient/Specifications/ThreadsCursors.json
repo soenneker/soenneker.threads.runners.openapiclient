@@ -1,0 +1,13 @@
+{
+  "fields": [
+    {
+      "name": "before",
+      "type": "string"
+    },
+    {
+      "name": "after",
+      "type": "string"
+    }
+  ],
+  "apis": []
+}

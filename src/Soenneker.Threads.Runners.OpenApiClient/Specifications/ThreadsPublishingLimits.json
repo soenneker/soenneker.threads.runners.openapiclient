@@ -1,0 +1,24 @@
+{
+  "fields": [
+    {
+      "name": "data",
+      "type": "list<ThreadsPublishingLimit>"
+    }
+  ],
+  "apis": [
+    {
+      "method": "GET",
+      "basePath": "{node-id}",
+      "return": "ThreadsPublishingLimits",
+      "params": [],
+      "endpoint": "threads_publishing_limit"
+    },
+    {
+      "method": "GET",
+      "basePath": "me",
+      "return": "ThreadsPublishingLimits",
+      "params": [],
+      "endpoint": "threads_publishing_limit"
+    }
+  ]
+}

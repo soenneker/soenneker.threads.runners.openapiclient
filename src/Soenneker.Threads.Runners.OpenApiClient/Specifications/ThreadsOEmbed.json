@@ -1,0 +1,60 @@
+{
+  "fields": [
+    {
+      "name": "version",
+      "type": "string"
+    },
+    {
+      "name": "type",
+      "type": "string"
+    },
+    {
+      "name": "html",
+      "type": "string"
+    },
+    {
+      "name": "author_name",
+      "type": "string"
+    },
+    {
+      "name": "author_url",
+      "type": "string"
+    },
+    {
+      "name": "provider_name",
+      "type": "string"
+    },
+    {
+      "name": "provider_url",
+      "type": "string"
+    },
+    {
+      "name": "width",
+      "type": "unsigned int"
+    }
+  ],
+  "apis": [
+    {
+      "method": "GET",
+      "basePath": "oembed",
+      "return": "ThreadsOEmbed",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "maxwidth",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "hide_thread",
+          "type": "bool",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

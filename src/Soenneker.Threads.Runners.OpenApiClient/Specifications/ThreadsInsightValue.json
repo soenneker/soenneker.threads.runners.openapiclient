@@ -1,0 +1,13 @@
+{
+  "fields": [
+    {
+      "name": "value",
+      "type": "Object"
+    },
+    {
+      "name": "end_time",
+      "type": "datetime"
+    }
+  ],
+  "apis": []
+}

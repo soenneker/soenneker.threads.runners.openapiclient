@@ -1,0 +1,367 @@
+{
+  "fields": [
+    {
+      "name": "data",
+      "type": "list<ThreadsMedia>"
+    },
+    {
+      "name": "paging",
+      "type": "ThreadsPaging"
+    }
+  ],
+  "apis": [
+    {
+      "method": "GET",
+      "basePath": "{node-id}",
+      "return": "ThreadsMediaList",
+      "params": [
+        {
+          "name": "limit",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "before",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "after",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "since",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "until",
+          "type": "unsigned int",
+          "required": false
+        }
+      ],
+      "endpoint": "threads"
+    },
+    {
+      "method": "GET",
+      "basePath": "{node-id}",
+      "return": "ThreadsMediaList",
+      "params": [
+        {
+          "name": "limit",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "before",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "after",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "since",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "until",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "reverse",
+          "type": "bool",
+          "required": false
+        }
+      ],
+      "endpoint": "replies"
+    },
+    {
+      "method": "GET",
+      "basePath": "{node-id}",
+      "return": "ThreadsMediaList",
+      "params": [
+        {
+          "name": "limit",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "before",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "after",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "since",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "until",
+          "type": "unsigned int",
+          "required": false
+        }
+      ],
+      "endpoint": "mentions"
+    },
+    {
+      "method": "GET",
+      "basePath": "me",
+      "return": "ThreadsMediaList",
+      "params": [
+        {
+          "name": "limit",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "before",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "after",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "since",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "until",
+          "type": "unsigned int",
+          "required": false
+        }
+      ],
+      "endpoint": "threads"
+    },
+    {
+      "method": "GET",
+      "basePath": "me",
+      "return": "ThreadsMediaList",
+      "params": [
+        {
+          "name": "limit",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "before",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "after",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "since",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "until",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "reverse",
+          "type": "bool",
+          "required": false
+        }
+      ],
+      "endpoint": "replies"
+    },
+    {
+      "method": "GET",
+      "basePath": "me",
+      "return": "ThreadsMediaList",
+      "params": [
+        {
+          "name": "limit",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "before",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "after",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "since",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "until",
+          "type": "unsigned int",
+          "required": false
+        }
+      ],
+      "endpoint": "mentions"
+    },
+    {
+      "method": "GET",
+      "basePath": "{node-id}",
+      "return": "ThreadsMediaList",
+      "params": [
+        {
+          "name": "limit",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "before",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "after",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "reverse",
+          "type": "bool",
+          "required": false
+        }
+      ],
+      "endpoint": "conversation"
+    },
+    {
+      "method": "GET",
+      "basePath": "{node-id}",
+      "return": "ThreadsMediaList",
+      "params": [
+        {
+          "name": "limit",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "before",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "after",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "reverse",
+          "type": "bool",
+          "required": false
+        },
+        {
+          "name": "approval_status",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "endpoint": "pending_replies"
+    },
+    {
+      "method": "GET",
+      "basePath": "keyword_search",
+      "return": "ThreadsMediaList",
+      "params": [
+        {
+          "name": "q",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "search_type",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "search_mode",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "limit",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "before",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "after",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "since",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "until",
+          "type": "unsigned int",
+          "required": false
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "basePath": "profile_posts",
+      "return": "ThreadsMediaList",
+      "params": [
+        {
+          "name": "username",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "limit",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "before",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "after",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "since",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "until",
+          "type": "unsigned int",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

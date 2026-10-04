@@ -1,0 +1,10 @@
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace Soenneker.Threads.Runners.OpenApiClient.Utils.Abstract;
+
+public interface IFileOperationsUtil
+{
+    /// <summary>Converts Meta JSON specifications, generates and builds the Graph API client, and optionally pushes when configured.</summary>
+    ValueTask Process(CancellationToken cancellationToken = default);
+}

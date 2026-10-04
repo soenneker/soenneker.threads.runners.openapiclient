@@ -1,0 +1,296 @@
+{
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "success",
+      "type": "bool"
+    },
+    {
+      "name": "deleted_id",
+      "type": "string"
+    }
+  ],
+  "apis": [
+    {
+      "method": "POST",
+      "basePath": "{node-id}",
+      "return": "ThreadsResult",
+      "params": [
+        {
+          "name": "media_type",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "image_url",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "video_url",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "children",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "alt_text",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "reply_control",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "reply_to_id",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "quote_post_id",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "link_attachment",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "topic_tag",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "location_id",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "is_carousel_item",
+          "type": "bool",
+          "required": false
+        },
+        {
+          "name": "auto_publish_text",
+          "type": "bool",
+          "required": false
+        },
+        {
+          "name": "is_spoiler_media",
+          "type": "bool",
+          "required": false
+        },
+        {
+          "name": "is_ghost_post",
+          "type": "bool",
+          "required": false
+        },
+        {
+          "name": "enable_reply_approvals",
+          "type": "bool",
+          "required": false
+        },
+        {
+          "name": "poll_attachment",
+          "type": "Object",
+          "required": false
+        },
+        {
+          "name": "text_attachment",
+          "type": "Object",
+          "required": false
+        },
+        {
+          "name": "gif_attachment",
+          "type": "Object",
+          "required": false
+        },
+        {
+          "name": "text_entities",
+          "type": "list<Object>",
+          "required": false
+        }
+      ],
+      "endpoint": "threads"
+    },
+    {
+      "method": "POST",
+      "basePath": "{node-id}",
+      "return": "ThreadsResult",
+      "params": [
+        {
+          "name": "creation_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "endpoint": "threads_publish"
+    },
+    {
+      "method": "POST",
+      "basePath": "me",
+      "return": "ThreadsResult",
+      "params": [
+        {
+          "name": "media_type",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "image_url",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "video_url",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "children",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "alt_text",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "reply_control",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "reply_to_id",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "quote_post_id",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "link_attachment",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "topic_tag",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "location_id",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "is_carousel_item",
+          "type": "bool",
+          "required": false
+        },
+        {
+          "name": "auto_publish_text",
+          "type": "bool",
+          "required": false
+        },
+        {
+          "name": "is_spoiler_media",
+          "type": "bool",
+          "required": false
+        },
+        {
+          "name": "is_ghost_post",
+          "type": "bool",
+          "required": false
+        },
+        {
+          "name": "enable_reply_approvals",
+          "type": "bool",
+          "required": false
+        },
+        {
+          "name": "poll_attachment",
+          "type": "Object",
+          "required": false
+        },
+        {
+          "name": "text_attachment",
+          "type": "Object",
+          "required": false
+        },
+        {
+          "name": "gif_attachment",
+          "type": "Object",
+          "required": false
+        },
+        {
+          "name": "text_entities",
+          "type": "list<Object>",
+          "required": false
+        }
+      ],
+      "endpoint": "threads"
+    },
+    {
+      "method": "POST",
+      "basePath": "me",
+      "return": "ThreadsResult",
+      "params": [
+        {
+          "name": "creation_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "endpoint": "threads_publish"
+    },
+    {
+      "method": "DELETE",
+      "basePath": "{node-id}",
+      "return": "ThreadsResult",
+      "params": []
+    },
+    {
+      "method": "POST",
+      "basePath": "{node-id}",
+      "return": "ThreadsResult",
+      "params": [
+        {
+          "name": "hide",
+          "type": "bool",
+          "required": true
+        }
+      ],
+      "endpoint": "manage_reply"
+    },
+    {
+      "method": "POST",
+      "basePath": "{node-id}",
+      "return": "ThreadsResult",
+      "params": [],
+      "endpoint": "repost"
+    }
+  ]
+}

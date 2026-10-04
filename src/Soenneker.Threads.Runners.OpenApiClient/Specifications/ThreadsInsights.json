@@ -1,0 +1,83 @@
+{
+  "fields": [
+    {
+      "name": "data",
+      "type": "list<ThreadsInsight>"
+    },
+    {
+      "name": "paging",
+      "type": "ThreadsPaging"
+    }
+  ],
+  "apis": [
+    {
+      "method": "GET",
+      "basePath": "{node-id}",
+      "return": "ThreadsInsights",
+      "params": [
+        {
+          "name": "metric",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "since",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "until",
+          "type": "unsigned int",
+          "required": false
+        }
+      ],
+      "endpoint": "threads_insights"
+    },
+    {
+      "method": "GET",
+      "basePath": "me",
+      "return": "ThreadsInsights",
+      "params": [
+        {
+          "name": "metric",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "since",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "until",
+          "type": "unsigned int",
+          "required": false
+        }
+      ],
+      "endpoint": "threads_insights"
+    },
+    {
+      "method": "GET",
+      "basePath": "{node-id}",
+      "return": "ThreadsInsights",
+      "params": [
+        {
+          "name": "metric",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "since",
+          "type": "unsigned int",
+          "required": false
+        },
+        {
+          "name": "until",
+          "type": "unsigned int",
+          "required": false
+        }
+      ],
+      "endpoint": "insights"
+    }
+  ]
+}

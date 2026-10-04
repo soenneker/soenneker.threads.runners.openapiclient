@@ -1,0 +1,117 @@
+{
+  "fields": [
+    {
+      "name": "access_token",
+      "type": "string"
+    },
+    {
+      "name": "token_type",
+      "type": "string"
+    },
+    {
+      "name": "expires_in",
+      "type": "unsigned int"
+    },
+    {
+      "name": "user_id",
+      "type": "string"
+    }
+  ],
+  "apis": [
+    {
+      "method": "POST",
+      "basePath": "oauth",
+      "return": "ThreadsToken",
+      "params": [
+        {
+          "name": "client_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "client_secret",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "code",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "grant_type",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "redirect_uri",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "endpoint": "access_token"
+    },
+    {
+      "method": "GET",
+      "basePath": "oauth",
+      "return": "ThreadsToken",
+      "params": [
+        {
+          "name": "client_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "client_secret",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "grant_type",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "endpoint": "access_token"
+    },
+    {
+      "method": "GET",
+      "basePath": "access_token",
+      "return": "ThreadsToken",
+      "params": [
+        {
+          "name": "grant_type",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "client_secret",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "access_token",
+          "type": "string",
+          "required": true
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "basePath": "refresh_access_token",
+      "return": "ThreadsToken",
+      "params": [
+        {
+          "name": "grant_type",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "access_token",
+          "type": "string",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

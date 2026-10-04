@@ -1,0 +1,17 @@
+{
+  "fields": [
+    {
+      "name": "cursors",
+      "type": "ThreadsCursors"
+    },
+    {
+      "name": "next",
+      "type": "string"
+    },
+    {
+      "name": "previous",
+      "type": "string"
+    }
+  ],
+  "apis": []
+}

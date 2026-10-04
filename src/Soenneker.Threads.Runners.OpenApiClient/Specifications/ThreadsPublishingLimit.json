@@ -1,0 +1,37 @@
+{
+  "fields": [
+    {
+      "name": "quota_usage",
+      "type": "unsigned int"
+    },
+    {
+      "name": "config",
+      "type": "Object"
+    },
+    {
+      "name": "reply_quota_usage",
+      "type": "unsigned int"
+    },
+    {
+      "name": "reply_config",
+      "type": "Object"
+    },
+    {
+      "name": "delete_quota_usage",
+      "type": "unsigned int"
+    },
+    {
+      "name": "delete_config",
+      "type": "Object"
+    },
+    {
+      "name": "location_search_quota_usage",
+      "type": "unsigned int"
+    },
+    {
+      "name": "location_search_config",
+      "type": "Object"
+    }
+  ],
+  "apis": []
+}

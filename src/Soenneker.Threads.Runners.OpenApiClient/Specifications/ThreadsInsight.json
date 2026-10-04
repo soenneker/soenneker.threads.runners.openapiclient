@@ -1,0 +1,37 @@
+{
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "period",
+      "type": "string"
+    },
+    {
+      "name": "values",
+      "type": "list<ThreadsInsightValue>"
+    },
+    {
+      "name": "title",
+      "type": "string"
+    },
+    {
+      "name": "description",
+      "type": "string"
+    },
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "total_value",
+      "type": "Object"
+    },
+    {
+      "name": "link_total_values",
+      "type": "list<Object>"
+    }
+  ],
+  "apis": []
+}
