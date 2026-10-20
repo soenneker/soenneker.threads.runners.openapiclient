@@ -46,7 +46,7 @@ public sealed class FileOperationsUtil(
             bool local = !string.IsNullOrWhiteSpace(clientDirectory);
             clientDirectory = local
                 ? Path.GetFullPath(clientDirectory!)
-                : await git.CloneToTempDirectory("https://github.com/soenneker/soenneker.facebook.openapiclient",
+                : await git.CloneToTempDirectory("https://github.com/soenneker/soenneker.threads.openapiclient",
                     cancellationToken: cancellationToken);
             string projectDirectory = Path.Combine(clientDirectory, "src", Constants.Library);
             string project = Path.Combine(projectDirectory, Constants.Library + ".csproj");
